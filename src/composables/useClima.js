@@ -11,7 +11,7 @@ export default function useClima(){
         error.value=''
         const key = import.meta.env.VITE_API_KEY;
 
-        const url = `http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${key}`
+        const url = `https://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${key}`
 
         try {
             const {data} = await axios(url)
